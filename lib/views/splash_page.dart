@@ -4,7 +4,7 @@ import 'package:flutter_router_example/services/app_service.dart';
 import 'package:provider/provider.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({ Key? key }) : super(key: key);
+  const SplashPage({Key? key}) : super(key: key);
 
   @override
   _SplashPageState createState() => _SplashPageState();
@@ -28,7 +28,7 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(APP_PAGE.splash.toTitle),
+        title: Text(AppPage.splash.toTitle),
       ),
       body: const Center(
         child: CircularProgressIndicator(),

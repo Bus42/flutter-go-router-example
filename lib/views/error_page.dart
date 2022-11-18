@@ -13,7 +13,7 @@ class ErrorPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(APP_PAGE.error.toTitle),
+        title: Text(AppPage.error.toTitle),
       ),
       body: Center(
         child: Column(
@@ -22,11 +22,9 @@ class ErrorPage extends StatelessWidget {
             Text(error ?? ""),
             TextButton(
               onPressed: () {
-                GoRouter.of(context).goNamed(APP_PAGE.home.toName);
+                GoRouter.of(context).goNamed(AppPage.home.toName);
               },
-              child: const Text(
-                "Back to Home"
-              ),
+              child: const Text("Back to Home"),
             ),
           ],
         ),
